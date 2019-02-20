@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Users</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="css/users.css" />
+  </head>
+  <body>
+	  <a thjs:href="/logout">Logout</a>
+	  <div class="table-users">
+			<div class="header">🖤 Users 🖤</div>
+			
+			<table cellspacing="0">
+			   <tr>
+				  <th>Username</th>
+				  <th>Email</th>
+				  <th></th>
+			   </tr>
+		 
+			   <tr thjs:each="user: ${users}">
+					<td thjs:text="${user.username}"></td>
+					<td thjs:text="${user.email}"></td>
+					<td>
+					  <a type="button" thjs:href="'/delete/' + ${user._id}">
+						Delete
+					  </a>
+					</td>
+				  </tr>
+			</table>
+		 </div>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Register Login with Authentication</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link
+      href="//fonts.googleapis.com/css?family=Jura:400,300,500,600"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <h1>🖤🖤🖤</h1>
+
+    <div class="main">
+      <div class="w3">
+        <div class="signin-form profile">
+          <h3>Login</h3>
+
+          <div class="login-form">
+            <form action="/" method="post">
+              <input
+                type="text"
+                name="logemail"
+                placeholder="E-mail"
+                required=""
+              />
+              <input
+                type="password"
+                name="logpassword"
+                placeholder="Password"
+                required=""
+              />
+              <div class="tp">
+                <input type="submit" value="LOGIN NOW" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="agile">
+        <div class="signin-form profile">
+          <h3>Register</h3>
+
+          <div class="login-form">
+            <form
+              id="login"
+              action="/"
+              method="post"
+              onsubmit="event.preventDefault(); validateMyForm();"
+            >
+              <input
+                type="text"
+                name="email"
+                placeholder="E-mail"
+                required=""
+              />
+              <input
+                type="text"
+                name="username"
+                placeholder="Username"
+                required=""
+              />
+              <input
+                type="password"
+                name="password"
+                placeholder="Password"
+                id="password"
+                required=""
+              />
+              <input
+                type="password"
+                name="passwordConf"
+                placeholder="Confirm Password"
+                id="password_conf"
+                required=""
+              />
+              <input type="submit" value="REGISTER" />
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+
+    <script type="text/javascript">
+      var passWordField = document.getElementById("password");
+      var passWordConfirmField = document.getElementById("password_conf");
+      var form = document.getElementById("login");
+      function validateMyForm() {
+        if (passWordField.value != passWordConfirmField.value) {
+          alert("Passwords do not match. Please try again.");
+        } else {
+          form.submit();
+        }
+      }
+    </script>
+  </body>
+</html>
