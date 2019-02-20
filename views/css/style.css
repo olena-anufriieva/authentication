@@ -241,22 +241,6 @@ h5 {
 .header-social h4 a:hover{
 	color:#FFB900;
 }
-/*--copyright--*/
-.copyright {
-    margin: 2em;
-    text-align: center;
-}
-.copyright p {
-    font-size: 1em;
-    color: #fff;
-	line-height:1.8em;
-}
-.copyright p a{
-    color: #fff;
-}
-.copyright p a:hover{
-    color:#56c8dc;
-}
 @media(max-width:1440px){
 .main {
     width: 56%;
@@ -392,9 +376,6 @@ h1 {
 .tp {
     margin: 1.7em 0 0;
 }
-.header-social {
-    margin-bottom: 1em;
-}
 .signin-form h3 {
     margin-bottom: 1em;
 }
@@ -448,27 +429,7 @@ h1 {
 .signin-form p a {
     font-size: 0.9em;
 }
-.header-social a.face {
-    background: url(../images/fac.png)no-repeat 12px 6px #3B62A3;
-    font-size: 14px;
-    width: 24%;
-}
 .signin-form p a {
     line-height: 1.5em;
-}
-.copyright {
-    margin: 1em;
-}
-.header-social a.face:hover {
-     background: url(../images/fac.png)no-repeat 12px 6px #0E387C;
-}
-.header-social a.goog {
-    background: url(../images/google.png)no-repeat 12px 6px #D64639;
-    font-size: 14px;
-    padding: 0 2.5em;
-    width: 19%;
-}
-.header-social a.goog:hover {
-    background: url(../images/google.png)no-repeat 12px 6px #ff4b3b;
 }
 }
